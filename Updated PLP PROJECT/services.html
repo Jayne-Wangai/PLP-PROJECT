@@ -1,0 +1,154 @@
+<html lang="eng">
+<head>
+    <meta charset="UTF -8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <div class="special">
+    <div class="navbar">
+            <div>
+                <a href='Services.html'> Services we Offer</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='about.html'>Services</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><button class='bookingbtn' onclick="document.getElementById('booking-form').style.display='block'" style="width:auto;">Book Appointment</button></li>
+                </ul>
+            </nav>
+    </div>
+    <div id='booking-form'class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='book()'class='toggle-btn'>Book</button>
+                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <form id='book' class='input-group-login'>
+                  <input type='text'class='input-field'placeholder='Enter Name' required >
+                  <input type='text'class='input-field'placeholder='Enter Service' required>
+                  <input type='text'class='input-field'placeholder='Enter Time' required>
+                  <input type='checkbox'class='check-box'><span>Confirm</span>
+                  <button type='submit'class='submit-btn'>Book</button>
+              </form>
+       <form id='register' class='input-group-register'>
+         <input type='text'class='input-field'placeholder='First Name' required>
+         <input type='text'class='input-field'placeholder='Last Name ' required>
+         <input type='email'class='input-field'placeholder='Email Id' required>
+         <input type='password'class='input-field'placeholder='Enter Password' required>
+         <input type='password'class='input-field'placeholder='Confirm Password'  required>
+         <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+    </form>
+       </div>
+    </div>
+    <div id="abut">
+     <div class="abit">
+      <div class="abet">
+        <div class="abat">
+            <h2 class="abt">Salon Services</h2>
+             <ol>
+                <li>Braiding</li>
+                <li>Manicure</li>
+                <li>Pedicure</li>
+                <li>Facial</li>
+                <li>Weave and wig Installment</li>
+                <li>Hair Dyeing</li>
+                <li>Hair Setting</li>
+                <li>Kids Hairdo</li>
+        
+                <li>
+                    <div>
+        
+                        <ul>
+                           <button class="button" onclick="document.getElementById('booking-form').style.display='block'" style="width:auto;">Book Appointment</button></li> 
+                        </ul>
+                           
+                       
+                   </div>
+                </li>
+             </ol>
+        </div>
+        <div>
+            <h2 class="abt">Massage</h2>
+              <ol>
+                <li>Morrocan Massage</li>
+                <li>Deep Tissue</li> 
+                <li>Chiropractor</li>
+               </ol>
+        </div>
+        <div>
+            <h2 class="abt">Make Up</h2>
+                <ol>
+                    <li>Full Face Beat</li>
+                    <li>Full Face Beat + Lashes</li>
+                    <li>Lash Installation</li>
+                    <li>Brow-Shapping</li>
+                    <li>Tweezing</li>
+                    <li>Threading</li>
+                    <li>MakeUp Classes</li>
+                </ol>
+        </div>
+        <div>
+            <h2 class="abt">Kids</h2>
+                <ol>
+                    <li>Kids Braids</li>
+                    <li>Pedicure</li>
+                    <li>Manicure</li>
+                    <li>Facial</li>
+                </ol>
+        </div>
+        <div>
+            <h2 class="abt">Other Services</h2>
+                <ol>
+                    <li>Skin Consultation</li>
+                    <li>Sauna</li>
+                    <li>Morrocan Bath</li>
+                    <li>Waxing  </li>
+                    <li>Sauna</li>
+                </ol>
+        </div>
+        
+        
+        
+      </div>
+     </div>
+    </div>
+
+   
+  
+ <script>
+    var x=document.getElementById('book');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+        function register()
+    }
+    function book()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+        var modal = document.getElementById('booking-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

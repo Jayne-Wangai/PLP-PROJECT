@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Bliss Spa</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>Golden Bliss Spa</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='About.html'>About Us</a></li>
+                    <li><a href='services.html'>Services</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                    <li><button class='bookingbtn' onclick="document.getElementById('booking-form').style.display='block'" style="width:auto;">Book</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		              <input type='password'class='input-field'placeholder='Enter Password' required>
+		              <input type='checkbox'class='check-box'><span>Remember Password</span>
+		              <button type='submit'class='submit-btn'>Log in</button>
+		          </form>
+		   <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	      </form>
+           </div>
+        </div>
+        <div id='booking-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='book()'class='toggle-btn'>Book</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='book' class='input-group-login'>
+                      <input type='text'class='input-field'placeholder='Enter Name' required >
+                      <input type='text'class='input-field'placeholder='Enter Service' required>
+                      <input type='text'class='input-field'placeholder='Enter Time' required>
+                      <input type='checkbox'class='check-box'><span>Confirm</span>
+                      <button type='submit'class='submit-btn'>Book</button>
+                  </form>
+           <form id='register' class='input-group-register'>
+             <input type='text'class='input-field'placeholder='First Name' required>
+             <input type='text'class='input-field'placeholder='Last Name ' required>
+             <input type='email'class='input-field'placeholder='Email Id' required>
+             <input type='password'class='input-field'placeholder='Enter Password' required>
+             <input type='password'class='input-field'placeholder='Confirm Password'  required>
+             <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+        </form>
+           </div>
+        </div>
+
+        <div class="header-text">
+         <p>
+          <h2>Golden Bliss Spa</h2>
+         </p>
+         <h1>Online Booking System</h1>
+         <div>
+            <ul>
+            <button class="button" onclick="document.getElementById('booking-form').style.display='block'" style="width:auto;">Book With Us Now!!</button></li> 
+             </ul>
+         </div>
+          
+         
+       </div>
+
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var x=document.getElementById('book');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+            function register()
+        }
+        function book()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('booking-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
